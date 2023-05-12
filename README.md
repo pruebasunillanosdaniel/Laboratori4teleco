@@ -1,6 +1,6 @@
 # Laboratori4teleco
 
-Buenas ,subo el repositorio de el laboratorio 4
-160003935
-Danel Humberto Salgado Gonzalez
+Saludos Coordiales ,subo el repositorio de el laboratorio 4 \n
+Codigo : 160003935 \n
+Estudiante :Danel Humberto Salgado Gonzalez \n
 
