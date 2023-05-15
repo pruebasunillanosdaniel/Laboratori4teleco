@@ -44,7 +44,7 @@ class Persona{
             "Apellidos" :(document.getElementById("Apellidos") as HTMLInputElement).value,
             "Fecha_nacimiento" : (document.getElementById("Fecha_nacimiento") as HTMLInputElement).value,
             "Condicion_medica" : (document.getElementById("Condicion_medica") as HTMLInputElement).value,
-            "Tipo_sangre":(document.getElementById("Tipo_sangre") as HTMLInputElement).value,
+            "Tipo_sangre":(document.getElementById("Tipo_sangre") as HTMLSelectElement).value,
             "Estatura":(document.getElementById("Estatura") as HTMLInputElement).value
         })
     }
@@ -129,7 +129,7 @@ function PrintDatos(){
         alert(http.responseText);
 
     }
-    http.send(JSON.stringify(Persona.get_Formulario()));
+    http.send(JSON.stringify(datos));
    
     
 

@@ -101,7 +101,7 @@ function Create(datos) {
         console.log(http.status, http.statusText);
         alert(http.responseText);
     };
-    http.send(JSON.stringify(Persona.get_Formulario()));
+    http.send(JSON.stringify(datos));
 }
 function Delete(id) {
     console.log("delete");
