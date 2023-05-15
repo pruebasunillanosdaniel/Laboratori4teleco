@@ -37,13 +37,18 @@ var Personas []Persona = []Persona{
 
 func Crear(P Persona) (error, int) {
 	for i := 0; i < len(Personas); i++ {
+		Personas[i].Id = i + 1
+	}
+
+	for i := 0; i < len(Personas); i++ {
 		if P.Nombre == Personas[i].Nombre && P.Apellido == Personas[i].Apellido {
 			return errors.New("Nombre y apellido ya existen "), -1
 		}
 	}
-	P.Id = len(Personas) + 1
+
 	Personas = append(Personas, P)
-	return nil, P.Id
+	Personas[len(Personas)-1].Id = len(Personas)
+	return nil, len(Personas)
 }
 func Actualizar(id int, P Persona) (error, int) {
 

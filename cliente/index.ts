@@ -124,6 +124,7 @@ function PrintDatos(){
         }
 
     }
+    
     http.onerror=function(){
         console.log(http.status,http.statusText)
         alert(http.responseText);
